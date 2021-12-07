@@ -71,12 +71,29 @@
           <button type="button" class="primary-button" data-modal-open>Заказать услугу</button>
         </div>
         <div class="backdrop is-hidden" data-modal>
-          <div class="modal modal-button">
-            <button type="button" class="but-close" data-modal-close >
+          
+          <div class="modal">
+            <button type="button" class="modal-close" data-modal-close >
               <svg width="11" height="11" class="icon-close" >
                 <use href="./images/close.svg#icon-close"></use>
               </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="#">
+              <label for="name" class="modal-form-field">Имя</label>
+            <input type="text" name="user-name" class="modal-input" id="name">
+            <label for="tel" class="modal-form-field">Телефон</label>
+            <input type="tel" name="user-tel" class="modal-input" id="tel">
+            <label for="mail" class="modal-form-field">Почта</label>
+            <input type="email" name="user-mail" class="modal-input" id="mail">
+            <label for="text"  class="modal-form-field">Комментарий</label>
+            <textarea name="user-text" id="text" class="modal-text" placeholder="Введите текст"></textarea>
+            <label class="contract-text">
+              <input type="checkbox" name="contract" class="modal-checkbox" />
+                Соглашаюсь с рассылкой и принимаю <a href="" class="contract-link">Условия договора</a>
+           </label>
+           <button type="submit" class="bth-modal-send">Отправить</button>
+          </form>
           </div>
         </div>
       </section>
@@ -418,7 +435,7 @@
         <a href="/" class="logo"
           >Web<span class="logo-white">Studio</span></a
         >
-        <div class="footer-list">
+        <div class="footer-list" >
         <address class="address">
           <ul class="secondary-contact list">
             <li class="footer-item">
@@ -476,6 +493,18 @@
               </li>
             </ul>
           </div>
+        
+        <form action="" class="footer-form">
+          <h2 class="footer-title">Подпишитесь на рассылку</h2>
+          <div class="footer-form-list">
+            <input type="email" name="user-name" placeholder="E-mail" class="footer-input">
+          <button type="submit" class="footer-button"> Подписаться 
+            <svg class="icon-footer-button" width="24px" height="24px">
+              <use href="./images/symbol.svg#icon-telegram"></use>
+            </svg>
+          </button>
+          </div>
+        </form>
         </div>
       </div>
     </footer>
