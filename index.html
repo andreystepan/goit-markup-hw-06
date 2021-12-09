@@ -103,9 +103,11 @@
             </div>
             <label for="text"  class="modal-form-field">Комментарий</label>
             <textarea name="user-text" id="text" class="modal-text" placeholder="Введите текст"></textarea>
-            <label class="contract-text">
-              <input type="checkbox" name="contract" class="modal-checkbox" />
-                Соглашаюсь с рассылкой и принимаю <a href="" class="contract-link">Условия договора</a>
+            <label class="modal-contract-text">
+              <input type="checkbox" name="contract" class="modal-checkbox visually-hidden" />
+                <span class="modal-check-item"><svg class="modal-icon-check" width="16" height="15">
+                  <use href="./images/symbol.svg#icon-Vector-chek"></use>
+                </svg></span> Соглашаюсь с рассылкой и принимаю <a href="" class="contract-link">Условия договора</a>
            </label>
            <button type="submit" class="bth-modal-send">Отправить</button>
           </form>
