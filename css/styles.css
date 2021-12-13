@@ -368,6 +368,8 @@ img {
 }
 
 .contract-link {
+  font-size: 14px;
+  line-height: 1.71;
   color: var(--accent-color);
   margin-left: 7px;
 }
